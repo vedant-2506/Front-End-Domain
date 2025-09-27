@@ -1,0 +1,71 @@
+JAVA SCRIPT NOTES
+
+Brendan Eich devlope JS in only 20 days .
+JS managed by ecmascript(EC) 
+
+JS langage and JS DOM are type of js 
+
+es5 and es6 are 2 version of JS 
+
+JS is interpreter langage
+
+JIT compiler : just in time compiler use fastly compil
+
+window : is coolection of tools use in js which are avalable in browser.
+consol,aler,promt are not part of js are part of browser
+
+
+Data-Type 
+2 types of data type 
+  (i) peimetive
+  (ii)reference 
+
+vedant = string 
+12      = integer 
+12.33   =float
+true    =boolean\
+false   =boolean
+a       = charector 
+
+
+
+Function
+Type of function :
+(A)ES-5
+        (1)Function statements
+            
+            function abcd(){
+                //functionstatement 
+            }
+
+        (2)Function expressions
+             
+             var abcd =function(){
+
+             }
+
+
+        (3)Aninymous Function (fun has no name)
+
+              function(){
+
+              }
+
+
+(B)ES-6 
+        (1)fat arrow function
+            
+             (a)basic fat arrow
+                    
+                     var a = () => {};
+                     var b = () => {};
+
+             (b)fat arrow with one parameter 
+                    
+                    var g =(ab) => {}
+                     
+             (c)fat arrow with inplicit return 
+                    var abcd = () => "vedant ";
+                    var ans = abcd();1 ratr
+
+

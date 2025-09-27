@@ -1,0 +1,95 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* block */
+.block {
+      display: block;
+      background: lightcoral;
+      padding: 10px;
+      margin: 5px;
+    }
+
+    .inline {
+      display: inline;
+      background: lightgreen;
+      padding: 5px;
+      margin: 5px;
+    }
+
+    .inline-block {
+      display: inline-block;
+      background: lightblue;
+      padding: 10px;
+      margin: 5px;
+      width: 120px;
+      text-align: center;
+    }
+
+    .none {
+      display: none; 
+    }
+
+
+
+
+    /* position */
+
+    .box {
+      width: 120px;
+      height: 80px;
+      margin: 10px;
+      color: white;
+      text-align: center;
+      line-height: 80px;
+      font-weight: bold;
+    }
+
+    .static {
+      position: static; /* default   */
+      background: gray;
+    }
+
+    .relative {
+      position: relative;
+      top: 20px; /* relative to itself */
+      left: 30px;
+      background: orange;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 50px;  /* inside nearest positioned parent */
+      left: 200px;
+      background: teal;
+    }
+
+    .fixed {
+      position: fixed;
+      bottom: 20px;  /* always fixed  */
+      right: 20px;
+      background: red;
+    }
+
+    .sticky {
+      position: sticky;
+      top: 10px; /* sticks at scrolling */
+      background: purple;
+    }
+
+    .position-container {
+      border: 2px dashed black;
+      height: 200px;
+      margin-top: 20px;
+      position: relative; /* parent for absolute */
+      padding: 10px;
+    }

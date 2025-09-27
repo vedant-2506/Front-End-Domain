@@ -1,0 +1,17 @@
+*  Units
+
+px   %   vw  vh  em   rem  
+
+px :represent 1 dot on screen 
+
+vw(viewport width)
+1 vw =1%  
+total screen width  chya % width ghenar 
+
+vh(viewport height)
+1 vw =1%
+total screen height  chya % height ghenar
+
+em (element-relative)
+depends on  font-size
+if you change foont-size  change em 
