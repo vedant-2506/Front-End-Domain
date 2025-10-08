@@ -69,3 +69,200 @@ Type of function :
                     var ans = abcd();1 ratr
 
 
+
+Object
+
+
+var obj ={};
+
+ var obj2 = new Object();
+
+ ex:
+ var obj = {
+  name :"vedant",
+  aeg: 21
+  email : asdfg@
+  contact: 1326688
+  };
+  
+
+
+  synchronance & asynchonance 
+
+
+
+
+
+    
+
+KEY WORDS 
+specific meanig in program is called key word 
+
+(A) this
+
+(1)globle-window
+   consol.log(this);
+
+(2)function -window 
+   function abcd(){
+  consol.log(this);
+}   
+
+(3)method-Object
+vae obj={
+  name: function(){
+  consol.log(this);
+  }
+}
+obj.name();  
+
+(4)Event
+document.queryselector("button")
+.addEventListener("click", function(){
+  consol.log(this);
+})  
+
+
+
+
+call apply bind
+
+call:
+  cost obj ={name :"harsh"}
+
+  function abcd(){
+    consol.log(this);
+  }
+  abcd.call(obj)
+
+
+apply
+cost obj ={name :"harsh"}
+
+  function abcd(a,b,c){
+    consol.log(this,a,b,c);
+  }
+  accd.apply(obj,[1,2,3]) 
+
+
+
+bind : same as call but store in any constent
+cost obj ={name :"harsh"}
+
+  function abcd(){
+    consol.log(this);
+  }
+  const  after = abc.bind(obj);
+
+   after()
+ 
+
+
+
+ prototype and inheritance  
+
+   a funtion in which we use this and then we call function 
+   use new ,new meanse we create a blank object .
+
+  function makeHuman(name ,aeg){
+    this.name = "vedant";
+    this.aeg = 25;
+  }
+  new makeHuman();
+
+
+constructor function 
+  a function in which we use this and  a object created by using new 
+  this function called constructor
+
+   function makeHuman(name ,aeg){
+    this.name = name;
+    this.aeg = aeg;
+  }
+  const human1 = new makeHuman("Vedant" , 21);
+  const human2 = new makeHuman("Swami" , 22);
+
+
+prototype
+
+function makeHuman(name ,aeg){
+    this.name = name;
+    this.aeg = aeg;
+  }
+
+    makeHuman.prototype.printMyName = function (){
+      consol.log(this.name);
+    }
+  const human1 = new makeHuman("Vedant" , 21);
+  const human2 = new makeHuman("Swami" , 22);
+
+
+
+closures
+   a function return other function   
+   
+   function abcd(){
+    var a = 12;
+    return function(){
+      consol.log(a);
+    }
+   }
+
+
+
+
+Event delegation 
+
+ create a div in html of parent id and in this give 2 buttons 
+
+var parent = document.queryselector(#parent);
+parent.addEventListener("click",fun(details)){
+  consol.log(details);
+}
+ 
+
+ (2)
+
+var parent = document.queryselector(#parent);
+
+parent.addEventListener("click",fun(details)){
+  if(details.target.id === "play" ){
+      consol.log("play a song");
+  }
+  else if(details.target.id === "pause" ){
+      consol.log( " pause a song");
+  }
+
+  
+}
+
+
+(3)
+const MyEvent = new Evwnt (This my event );
+
+document.queryselector("button")
+.addEventListener("Event complate" , function()){
+  aler("Event is complate");
+
+}
+
+document.queryselector("button").dispatchEvent();
+
+
+
+erro handeling
+try throw catch
+
+function divide(a,b){
+  try{
+  if( b == 0){
+    throw Errow("Somethink worng");
+  }
+  consol.log(a/b);
+  }
+  catch{
+    consol.errow(err);
+  }
+}
+
+divide(a,b);
